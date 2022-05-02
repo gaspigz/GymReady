@@ -1,0 +1,37 @@
+*{
+	font-family: 'Hind Vadodara', sans-serif;
+
+}
+html, body {
+  height: 100% ;
+}
+
+/*CONTAINER*/
+
+.contenedor-general{
+	height: 100%;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+/*NAV*/
+
+.login-nav-btn{
+	transition: all 0.3s;
+}
+
+.login-nav-btn:hover{
+	background-color: #484848;
+}
+
+/*CONTAINER INFERIOR*/
+.container-inferior{
+	height: 92vh;
+}
+
+/*CARRUSEL*/
+.carrusel{
+	align-self: center;
+	height: 30vh;
+
+}
