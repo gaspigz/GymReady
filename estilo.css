@@ -6,6 +6,8 @@ html, body {
   height: 100% ;
 }
 
+
+
 /*CONTAINER*/
 
 .contenedor-general{
@@ -73,4 +75,16 @@ html, body {
 .container-inferior{
 	height: 100vh;
 	background-color: #9a5353;
+}
+.coloreado{
+	position: relative;
+	overflow: hidden;
+	background-image: url("imagenWall1.jpg");
+	
+}
+
+.text-div-dos{
+	font-family: 'Bebas Neue', cursive;
+	color :beige;
+	font-style: italic;
 }
