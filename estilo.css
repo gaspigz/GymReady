@@ -30,8 +30,30 @@ html, body {
 }
 
 /*CARRUSEL*/
-.carrusel{
-	align-self: center;
-	height: 30vh;
+.carousel-item{
+	height: 92vh;
+	background: #777;
+}
 
+.imagen{
+	position: relative;
+	bottom: 100px;
+}
+.imagen6{
+	position: relative;
+	bottom: 370px;
+}
+.imagen7{
+	position: relative;
+	bottom: 300px;
+}
+@media only screen and (min-width: 1920px) {
+	.imagen6{
+		position: relative;
+		bottom: 550px;
+	}
+	.imagen7{
+		position: relative;
+		bottom: 400px;
+	}
 }
