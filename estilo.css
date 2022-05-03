@@ -24,7 +24,7 @@ html, body {
 	padding-bottom: 10px;
 }
 .mi-nav{
-	height: 6vh;
+	height: 7vh;
 }
 
 .login-nav-btn:hover{
@@ -38,7 +38,7 @@ html, body {
 
 /*CARRUSEL*/
 .carousel-item{
-	height: 94vh;
+	height: 93vh;
 	background: #777;
 }
 
@@ -79,12 +79,32 @@ html, body {
 .coloreado{
 	position: relative;
 	overflow: hidden;
-	background-image: url("imagenWall1.jpg");
+	background-image: url("imagenWall1Blur.jpg");
 	
 }
 
 .text-div-dos{
 	font-family: 'Bebas Neue', cursive;
+	font-size: 3.1rem;
 	color :beige;
+	
+}
+
+.outlined-text{
+	color: black;
+	text-shadow: -1px 1px 2px rgb(255, 255, 255),
+				  1px 1px 2px rgb(255, 255, 255),
+				  1px -1px 0 rgb(255, 255, 255),
+				  -1px -1px 0 rgb(255, 255, 255);
 	font-style: italic;
+}
+
+
+
+
+/*FOOTER*/
+
+.footer-nuestro{
+	height: 20vh;
+	background-color: #2a5c4d;
 }
