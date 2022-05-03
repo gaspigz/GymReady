@@ -18,6 +18,11 @@ html, body {
 
 .login-nav-btn{
 	transition: all 0.3s;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.mi-nav{
+	height: 6vh;
 }
 
 .login-nav-btn:hover{
@@ -26,12 +31,46 @@ html, body {
 
 /*CONTAINER INFERIOR*/
 .container-inferior{
-	height: 92vh;
+	height: 300vh;
 }
 
 /*CARRUSEL*/
-.carrusel{
-	align-self: center;
-	height: 30vh;
+.carousel-item{
+	height: 94vh;
+	background: #777;
+}
 
+.imagen{
+	position: relative;
+	bottom: 100px;
+}
+.imagen6{
+	position: relative;
+	bottom: 370px;
+}
+.imagen7{
+	position: relative;
+	bottom: 300px;
+}
+@media only screen and (min-width: 1920px) {
+	.imagen6{
+		position: relative;
+		bottom: 550px;
+	}
+	.imagen7{
+		position: relative;
+		bottom: 400px;
+	}
+}
+
+/*CONTAINER MEDIO*/
+.container-medio{
+	height: 100vh;
+	background-color: #b3a3a3;
+}
+
+/*CONTAINER INFERIOR*/
+.container-inferior{
+	height: 100vh;
+	background-color: #9a5353;
 }
