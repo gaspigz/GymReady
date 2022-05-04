@@ -15,3 +15,17 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+  function heightButtonsNav(){
+    let buttons = $(".login-nav-btn");
+    let height = buttons.innerHeight();
+    console.log(height);
+    let navHeight = $(".mi-nav").css("height");
+    let finalHeight = navHeight - height;
+    console.log(navHeight);
+    console.log(finalHeight);
+
+    buttons.css('padding-top', finalHeight + 'px');
+  }
+
+  heightButtonsNav();
