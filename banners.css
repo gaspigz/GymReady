@@ -1,0 +1,79 @@
+.banner-informacion-contenedor{
+    height: 40vh;
+    transition: all 0.9s;
+    margin-top: 5vh;
+    background: rgb(24, 24, 24);
+    /*background: linear-gradient(0deg, rgba(40,40,40,1) 0%, rgba(38,38,38,1) 50%, rgba(45,43,43,1) 100%);*/
+    
+    overflow: hidden;
+}
+.banner-informacion-contenedor:hover{
+    height: 43vh;
+    background: rgb(20,20,20);
+    /*background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(29,29,29,1) 50%, rgba(28,28,28,1) 100%);*/
+}
+.inner-banner-up{
+    transition: all 0.3s;
+    height: 100%;
+    width: 100%;  
+}
+
+.inner-banner-up::before{
+
+    content: "We care about your rutines, diets and progress.";
+    text-align: left;
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.imagen-banner-up{
+    float: right;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 33vw; 
+    transition: all 1s;
+}
+.imagen-banner-up:hover{
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 34vw; 
+}
+
+.inner-banner{
+    transition: all 0.3s;
+    height: 100%;
+    width: 100%;  
+}
+
+.inner-banner::after{
+
+    content: "We are a trustworthy team of professionals who are ready to help you with your project.";
+    text-align: right;
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    left: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.imagen-banner{
+    clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+    width: 33vw; 
+    transition: all 1s;
+}
+.imagen-banner:hover{
+    clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+    width: 34vw; 
+}

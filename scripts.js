@@ -29,3 +29,14 @@ function reveal() {
   }
 
   heightButtonsNav();
+
+  function growImagesBanner(){
+    let imagesU = $(".banner-img-up");
+    let imagesD = $(".banner-img");
+    let bannersD = $(".banner-informacion-contenedor");
+    bannersD.hover(function(){
+      imagesD.width= '34vw';
+      imagesU.width= '34vw';
+    });
+  }
+  growImagesBanner();

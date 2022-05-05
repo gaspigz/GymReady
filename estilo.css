@@ -43,7 +43,7 @@ html, body {
 /*CARRUSEL*/
 .carousel-item{
 
-	height: 93vh;
+	height: calc(100vh - 3.4rem);
 	background: #777;
 }
 
@@ -79,7 +79,7 @@ html, body {
 /*CONTAINER INFERIOR*/
 .container-inferior{
 	height: 100vh;
-	background-color: #9a5353;
+	background-color: #e4d6d6;
 }
 .coloreado{
 	position: relative;
@@ -102,9 +102,27 @@ html, body {
 				  1px -1px 0 rgb(255, 255, 255),
 				  -1px -1px 0 rgb(255, 255, 255);
 	font-style: italic;
+}
 
+/*CONTAINER INFO*/
+.text-div-tres{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 6rem;
+	color :rgb(125, 66, 165);
+	
+}
 
-
+.container-informacion{
+	height: 100vh;
+	background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 50%, rgba(17,16,16,1) 100%);
+}
+.coloreado{
+	position: relative;
+	overflow: hidden;
+	background-image: url("imagenWall1Blur.jpg");
+	
+}
 
 
 /*FOOTER*/
