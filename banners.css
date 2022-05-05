@@ -27,7 +27,7 @@
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 2vw;
     color: #fff;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -39,12 +39,12 @@
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
     width: 33vw; 
     transition: all 1s;
-}
+}/*
 .imagen-banner-up:hover{
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
     width: 34vw; 
 }
-
+*/
 .inner-banner{
     transition: all 0.3s;
     height: 100%;
@@ -61,7 +61,7 @@
     left: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 2vw;
     color: #fff;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
