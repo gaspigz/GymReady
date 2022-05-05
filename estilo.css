@@ -6,6 +6,8 @@ html, body {
   height: 100% ;
 }
 
+
+
 /*CONTAINER*/
 
 .contenedor-general{
@@ -18,16 +20,20 @@ html, body {
 
 .login-nav-btn{
 	transition: all 0.3s;
-	padding-top: 10px;
-	padding-bottom: 10px;
+
+	padding-top: 0.50rem;
+	padding-bottom: 0.50rem;
+	font-size: 1rem;
+	margin: 0;
 }
 .mi-nav{
-	height: 6vh;
+	height: 3.4rem;
 }
 
 .login-nav-btn:hover{
 	background-color: #484848;
 }
+
 
 /*CONTAINER INFERIOR*/
 .container-inferior{
@@ -36,7 +42,8 @@ html, body {
 
 /*CARRUSEL*/
 .carousel-item{
-	height: 94vh;
+
+	height: 93vh;
 	background: #777;
 }
 
@@ -73,4 +80,36 @@ html, body {
 .container-inferior{
 	height: 100vh;
 	background-color: #9a5353;
+}
+.coloreado{
+	position: relative;
+	overflow: hidden;
+	background-image: url("imagenWall1Blur.jpg");
+	
+}
+
+.text-div-dos{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3.1rem;
+	color :beige;
+	
+}
+
+.outlined-text{
+	color: black;
+	text-shadow: -1px 1px 2px rgb(255, 255, 255),
+				  1px 1px 2px rgb(255, 255, 255),
+				  1px -1px 0 rgb(255, 255, 255),
+				  -1px -1px 0 rgb(255, 255, 255);
+	font-style: italic;
+
+
+
+
+
+/*FOOTER*/
+
+.footer-nuestro{
+	height: 20vh;
+	background-color: #2a5c4d;
 }
