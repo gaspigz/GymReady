@@ -34,9 +34,13 @@ function reveal() {
     let imagesU = $(".banner-img-up");
     let imagesD = $(".banner-img");
     let bannersD = $(".banner-informacion-contenedor");
+    imagesU.hover(function(e){
+      e.css('width','34vw');
+    })
     bannersD.hover(function(){
-      imagesD.width= '34vw';
-      imagesU.width= '34vw';
+      console.log(imagesD.width);
+      imagesD.width='34vw';
+      imagesU.css('width','34vw');
     });
   }
   growImagesBanner();
