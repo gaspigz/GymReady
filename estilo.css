@@ -20,6 +20,7 @@ html, body {
 
 .login-nav-btn{
 	transition: all 0.3s;
+	overflow: hidden;
 
 	padding-top: 0.50rem;
 	padding-bottom: 0.50rem;
@@ -28,6 +29,7 @@ html, body {
 }
 .mi-nav{
 	height: 3.4rem;
+	overflow: hidden;
 }
 
 .login-nav-btn:hover{
