@@ -126,6 +126,13 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 50%, rgba(1
 	
 }
 
+/*CONTAINER NOSOTROS*/
+
+.wall3{
+    position: relative;
+    overflow: hidden;
+    background-image: url("wall3.jpg");
+}
 
 /*FOOTER*/
 
