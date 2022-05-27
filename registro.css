@@ -2,11 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
+.contenedor-general-registro{
+	height: 100vh;
+	overflow: hidden;
+}
+
 
        body{
         background-image: url("imagenWall1.jpg");
         font-family: "Poppins", sans-serif;
-        font-weight: 300;
+        font-weight: 10;
        }
 
        .height{
@@ -15,9 +20,9 @@
 
        .card{
         border:none;
-        padding: 20px;
+        padding: 10px;
         background-color: #1c1e21;
-        color: #fff;
+        color: rgb(0, 0, 0);
 
        }
 
@@ -79,7 +84,7 @@
 
         .social{
 
-          height: 10px;
+          height: 10	px;
           width: 10px;
           display: flex;
           justify-content: center;
