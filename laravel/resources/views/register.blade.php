@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>GymReady</title>
 
-	<link rel="icon" href="dumbell.png">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="cards.css">
-	<link rel="stylesheet" type="text/css" href="animations.css">
-	<link rel="stylesheet" type="text/css" href="banners.css">
-    <link rel="stylesheet" type="text/css" href="registro.css">
+	<link rel="icon" href="/img/dumbell.png">
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/cards.css">
+	<link rel="stylesheet" type="text/css" href="/css/animations.css">
+	<link rel="stylesheet" type="text/css" href="/css/banners.css">
+    <link rel="stylesheet" type="text/css" href="/css/registro.css">
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	
@@ -19,7 +19,7 @@
 	<script src="https://kit.fontawesome.com/cb12baf425.js" crossorigin="anonymous"></script>
 	
   <!--JQuery-->
-	<script type="text/javascript" src="jquery.js"></script> 
+	<script type="text/javascript" src="/js/jquery.js"></script> 
 
 
 	<!-- Fuentes -->
@@ -44,7 +44,7 @@
 
 </head>
 <body>
-		<div class="contenedor-general-registro container-fluid">
+		<div class="contenedor-general-registro container-fluid" style="background-image: url('img/imagenWall1.jpg')">
 			<div class="row">
 				<div class="container mt-5 mb-5">
 
@@ -112,11 +112,11 @@
 						<div class="text-center mt-4">
 							
 							<span>Already a member?</span>
-							<a href="login.html" class="text-decoration-none">Login</a>
+							<a href="/login" class="text-decoration-none">Login</a>
 		
 						</div>
 							<div class="text-center mt-4">
-								<a href="index.html" class="text-decoration-none">Home</a>
+								<a href="/index" class="text-decoration-none">Home</a>
 					   		</div>	
 						</div>
 		
@@ -134,7 +134,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="scripts.js"></script> </script>
+	<script type="text/javascript" src="/css/scripts.js"></script> </script>
 </body>
 </html>
 	

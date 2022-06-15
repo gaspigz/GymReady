@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>GymReady</title>
 
-	<link rel="icon" href="dumbell.png">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link rel="stylesheet" type="text/css" href="cardswall3.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="cards.css">
-	<link rel="stylesheet" type="text/css" href="animations.css">
-	<link rel="stylesheet" type="text/css" href="banners.css">
-	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="loader++.css">
+	<link rel="icon" href="/img/dumbell.png">
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="/css/cardswall3.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/cards.css">
+	<link rel="stylesheet" type="text/css" href="/css/animations.css">
+	<link rel="stylesheet" type="text/css" href="/css/banners.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/css/loader++.css">
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	
@@ -21,7 +21,7 @@
 	<script src="https://kit.fontawesome.com/cb12baf425.js" crossorigin="anonymous"></script>
 	
   <!--JQuery-->
-	<script type="text/javascript" src="jquery.js"></script> 
+	<script type="text/javascript" src="/js/jquery.js"></script> 
 
 
 	<!-- Fuentes -->
@@ -53,7 +53,7 @@
 
 		<nav class="navbar sticky-top navbar-expand-lg mi-nav navbar-light bg-dark">
 			<div class="container-fluid d-flex justify-content-center align-content-center">
-				<a class="navbar-brand ms-3 text-light" href="https://www.agssoft.ar/index.html" style="font-size: 1 rem;">GymReady</a>
+				<a class="navbar-brand ms-3 text-light" href="/" style="font-size: 1 rem;">GymReady</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -70,10 +70,10 @@
 
 					</li>
 					<li class="nav-item me-3 login-nav-btn">
-					<a class="nav-link text-light text-light" href="login.html">Sing In</a>
+					<a class="nav-link text-light text-light" href="/login">Sing In</a>
 					</li>
 					<li class="nav-item login-nav-btn">
-					<a class="nav-link text-light text-light" href="register.html">Sing Up</a>
+					<a class="nav-link text-light text-light" href="/register">Sing Up</a>
 					</li>
 				</ul>
 				</div>
@@ -83,7 +83,7 @@
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="imagen5.jpg" class="d-block w-100 imagen" alt="...">
+					<img src="/img/imagen5.jpg" class="d-block w-100 imagen" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Change your mind</h5>
 						<p>Be part of our team</p>
@@ -91,7 +91,7 @@
 				</div>
 				<div class="carousel-item">
 				
-					<img src="imagen6.jpg" class="d-block w-100 imagen6" alt="...">
+					<img src="/img/imagen6.jpg" class="d-block w-100 imagen6" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Keep on working</h5>
 						<p>Flexible times</p>
@@ -99,7 +99,7 @@
 				
 				</div>
 				<div class="carousel-item">
-					<img src="imagen7.jpg" class="d-block w-100 imagen7" alt="...">
+					<img src="/img/imagen7.jpg" class="d-block w-100 imagen7" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>A lot of professionals</h5>
 						<p>Don't worry about nothing</p>
@@ -117,7 +117,7 @@
 		</div>
     
 		<div class="container-fluid container-medio">
-			<div class="row justify-content-center align-content-center cont-medio-responsive h-100 coloreado">
+			<div class="row justify-content-center align-content-center cont-medio-responsive h-100 coloreado" style="background-image: url('img/imagenWall1Blur.jpg');">
 				<div class="col-sm-2"></div>
 
 				<div class="col-sm-4 d-flex flex-column	align-items-left justify-content-center align-self-center h-100">
@@ -140,12 +140,12 @@
 					<div class="container-card align-self-center reveal fade-right">
 						<div class="card-extra d-flex justify-content-center">
 						  <div class="imgBx foto-dumbell-card" style="width: 9rem;">
-							<img src="dumbell.png">
+							<img src="/img/dumbell.png">
 						  </div>
 						  <div class="contentBx">
 							<h2>Start now</h2>														
-							<a href="register.html" style="margin-top: 1.7rem;">Register</a>
-							<a href="login.html" style="margin-top: 1.7rem;">Sign in</a>
+							<a href="/register" style="margin-top: 1.7rem;">Register</a>
+							<a href="/login" style="margin-top: 1.7rem;">Sign in</a>
 						  </div>
 						</div>
 					  </div>
@@ -157,12 +157,12 @@
 		
 		<div class="container-fluid container-informacion">
 			<div class="row"> <!-- row de los 2 cards -->
-				<a href="">
+				<a href="/register">
 					<div class="container-fluid  d-flex justify-content-center align-content-center">
 						<div class="col-md-2"></div>
 						<div class="banner-informacion-contenedor col-md-8 reveal fade-right" >
 							<div class="inner-banner-up">
-								<img src="imagen2.jpg" alt="" class="imagen-banner-up">
+								<img src="/img/imagen2.jpg" alt="" class="imagen-banner-up">
 								<h3 class="inner-banner-textU">We care about your rutines, diets and progress. <br>Click for more information.</h3>
 							</div>
 						</div>
@@ -170,12 +170,12 @@
 					</div>
 				</a>
 				
-				<a href="register.html">
+				<a href="/register">
 					<div class="container-fluid  d-flex justify-content-center align-content-center">
 						<div class="col-md-2"></div>
 						<div class="banner-informacion-contenedor col-md-8 reveal fade-left" >
 							<div class="inner-banner">
-								<img src="imagen0.jpg" alt="" class="imagen-banner">
+								<img src="/img/imagen0.jpg" alt="" class="imagen-banner">
 								<h3 class="inner-banner-textD">Don't lose time. <br>Start now HERE.</h3>
 							</div>
 						</div>
@@ -188,7 +188,7 @@
 		</div>
 		
 		<div class="container-fluid container-inferior">
-			<div class="row justify-content-center align-content-center h-100 wall3">
+			<div class="row justify-content-center align-content-center h-100 wall3" style="background-image: url('img/wall3.jpg');">
 				<div class="container">
 					<div class="intro">
 						<h2 class="text-center text-div-dos">OUR PROFESSIONAL TEAM</h2>
@@ -196,7 +196,7 @@
 					</div>
 					<div class="row people">
 						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="chalado.jpg">
+							<div class="box"><img class="rounded-circle tamaños-img" src="/img/chalado.jpg">
 								<h3 class="name titulowall3 color-letra">Jhon Whells</h3>
 								<p class="title textowall3 color-letra">Personal Trainer</p>
 								<p class="description textowall3 color-letra">10 years of experience in functional and strength training</p>
@@ -204,7 +204,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="mauro_toti.jpg">
+							<div class="box"><img class="rounded-circle tamaños-img" src="/img/mauro_toti.jpg">
 								<h3 class="name titulowall3 color-letra">Pep chess</h3>
 								<p class="title textowall3 color-letra">Personal trainer</p>
 								<p class="description textowall3 color-letra">7 years being a muscle hypertrophy coach</p>
@@ -212,7 +212,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="gaspi.jpg">
+							<div class="box"><img class="rounded-circle tamaños-img" src="/img/gaspi.jpg">
 								<h3 class="name titulowall3 color-letra">Galo Rodriguez</h3>
 								<p class="title textowall3 color-letra">Nutritionist</p>
 								<p class="description textowall3 color-letra">8 years of profession specializing in nutrition for athletes</p>
@@ -279,7 +279,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="scripts.js"></script> </script>
+	<script type="text/javascript" src="/js/scripts.js"></script> </script>
 </body>
 </html>
 	
