@@ -20,6 +20,7 @@ html, body {
 
 .login-nav-btn{
 	transition: all 0.3s;
+	overflow: hidden;
 
 	padding-top: 0.50rem;
 	padding-bottom: 0.50rem;
@@ -28,6 +29,7 @@ html, body {
 }
 .mi-nav{
 	height: 3.4rem;
+	overflow: hidden;
 }
 
 .login-nav-btn:hover{
@@ -84,7 +86,7 @@ html, body {
 .coloreado{
 	position: relative;
 	overflow: hidden;
-	background-image: url("imagenWall1Blur.jpg");
+	background-image: url("../img/imagenWall1Blur.jpg");
 	
 }
 
@@ -120,10 +122,17 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 50%, rgba(1
 .coloreado{
 	position: relative;
 	overflow: hidden;
-	background-image: url("imagenWall1Blur.jpg");
+	background-image: url("img/imagenWall1Blur.jpg");
 	
 }
 
+/*CONTAINER NOSOTROS*/
+
+.wall3{
+    position: relative;
+    overflow: hidden;
+    background-image: url("img/wall3.jpg");
+}
 
 /*FOOTER*/
 
