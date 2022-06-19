@@ -1,0 +1,143 @@
+*{
+	font-family: 'Hind Vadodara', sans-serif;
+
+}
+html, body {
+  height: 100% ;
+}
+
+
+
+/*CONTAINER*/
+
+.contenedor-general{
+	height: 100%;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+/*NAV*/
+
+.login-nav-btn{
+	transition: all 0.3s;
+	overflow: hidden;
+
+	padding-top: 0.50rem;
+	padding-bottom: 0.50rem;
+	font-size: 1rem;
+	margin: 0;
+}
+.mi-nav{
+	height: 3.4rem;
+	overflow: hidden;
+}
+
+.login-nav-btn:hover{
+	background-color: #484848;
+}
+
+
+/*CONTAINER INFERIOR*/
+.container-inferior{
+	height: 300vh;
+}
+
+/*CARRUSEL*/
+.carousel-item{
+
+	height: calc(100vh - 3.4rem);
+	background: #777;
+}
+
+.imagen{
+	position: relative;
+	bottom: 100px;
+}
+.imagen6{
+	position: relative;
+	bottom: 370px;
+}
+.imagen7{
+	position: relative;
+	bottom: 300px;
+}
+@media only screen and (min-width: 1920px) {
+	.imagen6{
+		position: relative;
+		bottom: 550px;
+	}
+	.imagen7{
+		position: relative;
+		bottom: 400px;
+	}
+}
+
+/*CONTAINER MEDIO*/
+.container-medio{
+	height: 100vh;
+	background-color: #b3a3a3;
+}
+
+/*CONTAINER INFERIOR*/
+.container-inferior{
+	height: 100vh;
+	background-color: #e4d6d6;
+}
+.coloreado{
+	position: relative;
+	overflow: hidden;
+	background-image: url("../img/imagenWall1Blur.jpg");
+	
+}
+
+.text-div-dos{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3.1rem;
+	color :beige;
+	
+}
+
+.outlined-text{
+	color: black;
+	text-shadow: -1px 1px 2px rgb(255, 255, 255),
+				  1px 1px 2px rgb(255, 255, 255),
+				  1px -1px 0 rgb(255, 255, 255),
+				  -1px -1px 0 rgb(255, 255, 255);
+	font-style: italic;
+}
+
+/*CONTAINER INFO*/
+.text-div-tres{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 6rem;
+	color :rgb(125, 66, 165);
+	
+}
+
+.container-informacion{
+	height: 100vh;
+	background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 50%, rgba(17,16,16,1) 100%);
+}
+.coloreado{
+	position: relative;
+	overflow: hidden;
+	background-image: url("img/imagenWall1Blur.jpg");
+	
+}
+
+/*CONTAINER NOSOTROS*/
+
+.wall3{
+    position: relative;
+    overflow: hidden;
+    background-image: url("img/wall3.jpg");
+}
+
+/*FOOTER*/
+
+.footer-nuestro{
+	height: 20vh;
+	background-color: #2a5c4d;
+}
+

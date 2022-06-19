@@ -12,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/animations.css">
 	<link rel="stylesheet" type="text/css" href="/css/banners.css">
     <link rel="stylesheet" type="text/css" href="/css/registro.css">
-    <link rel="stylesheet" type="text/css" href="/css/login.css">
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	
@@ -45,62 +44,97 @@
 
 </head>
 <body>
-<div class="contenedor-general-registro container-fluid" >
-			<div class="row justify-content-center align-content-center h-100 coloreado" style="background-image: url('img/wall-login.jpg')">
-				<div class="container col-md-10" id="container">
-					<div class="form-container sign-up-container">
-						<form action="#">
-							<h1>Create Account</h1>
-							<div class="social-container">
-								<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-								<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-							</div>
-							<span>or use your email for registration</span>
-							<input type="text" placeholder="Name" />
-							<input type="email" placeholder="Email" />
-							<input type="password" placeholder="Password" />
-							<button class="signup-btn">Sign Up</button>
-						</form>
-					</div>
-					<div class="form-container sign-in-container">
-						<form action="#">
-							<h1>Sign in</h1>
-							<div class="social-container">
-								<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-								<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-							</div>
-							<span>or use your account</span>
-							<input type="email" placeholder="Email" />
-							<input type="password" placeholder="Password" />
-							<a href="#">Forgot your password?</a>
-							<button>Sign In</button>
-						</form>
-					</div>
-					<div class="overlay-container">
-						<div class="overlay">
-							<div class="overlay-panel overlay-left">
-								<h1>Welcome Back!</h1>
-								<p>To keep connected with us please login with your personal info</p>
-								<button class="ghost" id="signIn">Sign In</button>
-							</div>
-							<div class="overlay-panel overlay-right">
-								<h1>Hello, Friend!</h1>
-								<p>Enter your personal details and start journey with us</p>
-								<button class="ghost" id="signUp">Sign Up</button>
-							</div>
+		<div class="contenedor-general-registro container-fluid" style="background-image: url('img/imagenWall1.jpg')">
+			<div class="row">
+				<div class="container mt-5 mb-5">
+
+					<div class="row d-flex align-items-center justify-content-center">
+		
+					<div class="col-md-6">
+		
+		
+						<div class="card px-2 py-2">
+		
+		
+						<h5 class="mt-3 text-center">Register to GymReady<br></h5>
+						<small class="mt-2 text-center text-muted">GymReady's official page</small>
+		
+		
+						<div class="form-input">
+		
+							<i class="fa fa-envelope"></i>
+							<input type="text" class="form-control" placeholder="Email address">
+							
 						</div>
+		
+						<div class="form-input">
+		
+							<i class="fa fa-user"></i>
+							<input type="text" class="form-control" placeholder="User name">
+							
+						</div>
+		
+		
+						<div class="form-input">
+		
+							<i class="fa fa-lock"></i>
+							<input type="text" class="form-control" placeholder="password">
+							
+						</div>
+		
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							<label class="form-check-label" for="flexCheckChecked">
+							I agree all the statements
+							</label>
+						</div>
+		
+		
+						<button class="btn btn-primary mt-4 signup">Start</button>
+		
+		
+						<div class="text-center mt-3">
+		
+							<span>Or continue with these social profile</span>
+							
+						</div>
+		
+		
+						<div class="d-flex justify-content-center mt-4">
+							
+							<span class="social"><i class="fa fa-instagram"></i></span>
+							<span class="social"><i class="fa fa-facebook"></i></span>
+							<span class="social"><i class="fa fa-twitter"></i></span>
+							
+						</div>
+		
+		
+						<div class="text-center mt-4">
+							
+							<span>Already a member?</span>
+							<a href="/login" class="text-decoration-none">Login</a>
+		
+						</div>
+							<div class="text-center mt-4">
+								<a href="/index" class="text-decoration-none">Home</a>
+					   		</div>	
+						</div>
+		
+		
+						
 					</div>
+					
+					</div>
+					
 				</div>
 			</div>
-			
+				
 		</div>
 		
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/js/login.js"></script>
-	<script type="text/javascript" src="/js/scripts.js"></script> </script>
+
+	<script type="text/javascript" src="/css/scripts.js"></script> </script>
 </body>
 </html>
 	
