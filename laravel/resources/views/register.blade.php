@@ -49,7 +49,8 @@
 			<div class="row justify-content-center align-content-center h-100 coloreado" style="background-image: url('img/wall-login.jpg')">
 				<div class="container col-md-10 right-panel-active" id="container">
 					<div class="form-container sign-up-container">
-						<form action="#">
+						<form action="/register" method="POST">
+							@csrf
 							<h1>Create Account</h1>
 							<div class="social-container">
 								<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -57,9 +58,17 @@
 								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 							</div>
 							<span>or use your email for registration</span>
-							<input type="text" placeholder="Name" />
-							<input type="email" placeholder="Email" />
-							<input type="password" placeholder="Password" />
+							<div>
+								<input class="col-sm-6" type="text" placeholder="User" name="user"/><input class="col-sm-6" type="email" placeholder="Email" name="email"/>
+							</div>
+							<div>
+								<input class="col-sm-6" type="text" placeholder="Name" name="name"/><input class="col-sm-6" type="text" placeholder="Surname" name="surname"/>
+							</div>							
+							<input class="col-sm-11" type="date" placeholder="Birthdate" name="birth_date"/>						
+							<div>
+								<input class="col-sm-6" type="password" placeholder="Password" name="password"/><input class="col-sm-6" type="password" placeholder="Confirm password" name="password_confirmation"/>
+							</div>
+							
 							<button class="signup-btn">Sign Up</button>
 						</form>
 					</div>
