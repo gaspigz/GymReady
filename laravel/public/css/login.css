@@ -53,7 +53,7 @@ button {
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+	transition: transform 0.2s ease-in;
 }
 
 button:active {
@@ -227,4 +227,13 @@ input {
 
 .signup-btn{
 	margin-top: 3vh;
+}
+
+#boton-goback{
+	background-color: #e0e0e0;
+	color: #222222;
+}
+
+button:hover{
+	transform: scale(0.95); 
 }

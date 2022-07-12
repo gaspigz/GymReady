@@ -60,12 +60,12 @@
 							<span>or use your email for registration</span>
 							<div>
 								<input class="col-sm-6" type="text" placeholder="User" name="user"/><input class="col-sm-6" type="email" placeholder="Email" name="email"/>
-							</div>
-							<div>
+							
+							
 								<input class="col-sm-6" type="text" placeholder="Name" name="name"/><input class="col-sm-6" type="text" placeholder="Surname" name="surname"/>
-							</div>							
-							<input class="col-sm-11" type="date" placeholder="Birthdate" name="birth_date"/>						
-							<div>
+														
+							<input class="col-sm-12" type="date" placeholder="Birthdate" name="birth_date"/>						
+							
 								<input class="col-sm-6" type="password" placeholder="Password" name="password"/><input class="col-sm-6" type="password" placeholder="Confirm password" name="password_confirmation"/>
 							</div>
 							
@@ -86,6 +86,7 @@
 							<input type="password" name="password" placeholder="Password" />
 							<a href="#">Forgot your password?</a>
 							<button>Sign In</button>
+							<button id="boton-goback"><a href="/index">Go back</a></button>
 						</form>
 					</div>
 					<div class="overlay-container">

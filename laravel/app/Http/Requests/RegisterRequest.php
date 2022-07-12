@@ -30,7 +30,7 @@ class RegisterRequest extends FormRequest
             'surname' => 'required|string|max:16',
             'birth_date' => 'required|date',
             'password' => 'required|string|min:8|max:16',
-            'password_confirmation' => 'required|string|max:16|same:password'
+            'password_confirmation' => 'required|max:16|same:password'
         ];
     }
 }
