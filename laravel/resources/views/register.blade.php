@@ -59,21 +59,21 @@
 							</div>
 							<span>or use your email for registration</span>
 							<div>
-								<input class="col-sm-6" type="text" placeholder="User" name="user"/><input class="col-sm-6" type="email" placeholder="Email" name="email"/>
-							</div>
-							<div>
-								<input class="col-sm-6" type="text" placeholder="Name" name="name"/><input class="col-sm-6" type="text" placeholder="Surname" name="surname"/>
-							</div>							
-							<input class="col-sm-11" type="date" placeholder="Birthdate" name="birth_date"/>						
-							<div>
-								<input class="col-sm-6" type="password" placeholder="Password" name="password"/><input class="col-sm-6" type="password" placeholder="Confirm password" name="password_confirmation"/>
+								<input class="col-md-6" type="text" placeholder="User" name="user"/><input class="col-sm-6" type="email" placeholder="Email" name="email"/>
+							
+								<input class="col-md-6" type="text" placeholder="Name" name="name"/><input class="col-sm-6" type="text" placeholder="Surname" name="surname"/>
+														
+							<input class="col-md-12" type="date" placeholder="Birthdate" name="birth_date"/>						
+							
+								<input class="col-md-6" type="password" placeholder="Password" name="password"/><input class="col-sm-6" type="password" placeholder="Confirm password" name="password_confirmation"/>
 							</div>
 							
 							<button class="signup-btn">Sign Up</button>
 						</form>
 					</div>
 					<div class="form-container sign-in-container">
-						<form action="#">
+						<form action="/login" method="post">
+						@csrf
 							<h1>Sign in</h1>
 							<div class="social-container">
 								<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -81,8 +81,8 @@
 								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 							</div>
 							<span>or use your account</span>
-							<input type="email" placeholder="Email" />
-							<input type="password" placeholder="Password" />
+							<input type="text" name="user" placeholder="Email" />
+							<input type="password" name="password" placeholder="Password" />
 							<a href="#">Forgot your password?</a>
 							<button>Sign In</button>
 						</form>

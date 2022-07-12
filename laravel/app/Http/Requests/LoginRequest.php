@@ -38,11 +38,11 @@ class LoginRequest extends FormRequest
                 'password' => $this->get('password')
             ];
         }
-        return $this->only('username', 'password');
+        return $this->only('user', 'password');
     }
     
     public function isEmail($value){
-        $factory = $this->container->make(Validation::class);
+        $factory = $this->container->make(ValidationFactory::class);
         return !$factory->make(['user' => $value], ['user' => 'email'])->fails();
     }
 }

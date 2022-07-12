@@ -69,12 +69,23 @@
 					<a class="nav-link text-light colorear-boton" href="#">Contact</a>
 
 					</li>
+					@guest
 					<li class="nav-item me-3 login-nav-btn">
 					<a class="nav-link text-light text-light" href="/login">Sing In</a>
 					</li>
 					<li class="nav-item login-nav-btn">
 					<a class="nav-link text-light text-light" href="/register">Sing Up</a>
 					</li>
+					@endguest
+					@auth
+					<li class="nav-item login-nav-btn">
+					<a class="nav-link text-light text-light" href="/register">Bienvenido {{auth()->user()->name ?? auth()->user()->user}}</a>
+					</li>
+					<li class="nav-item login-nav-btn">
+					<a class="nav-link text-light text-light" href="/logout">Log Out</a>
+					</li>
+					@endauth
+
 				</ul>
 				</div>
 			</div>
@@ -115,7 +126,7 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 		</div>
-    
+    @guest
 		<div class="container-fluid container-medio">
 			<div class="row justify-content-center align-content-center cont-medio-responsive h-100 coloreado" style="background-image: url('img/imagenWall1Blur.jpg');">
 				<div class="col-sm-2"></div>
@@ -223,7 +234,7 @@
 				</div>
 			</div>
 		</div>
-
+	@endguest
 		<div class="container-fluid footer-nuestro">
 			<div class="row p-3 bg-dark text-white">
 				<div class="col-xs-12 col-md-6 col-lg-3">

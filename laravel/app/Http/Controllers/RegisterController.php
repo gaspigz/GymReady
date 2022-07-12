@@ -20,7 +20,7 @@ class RegisterController extends Controller
         $user->name = $request->name;
         $user->surname = $request->surname;
         $user->birth_date = $request->birth_date;
-        $user->password = $request->password;
+        $user->password = bcrypt($request->password);
         $user->save();
         return redirect('/login')->with('succes','Account created');
         

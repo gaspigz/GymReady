@@ -73,7 +73,7 @@
 						</form>
 					</div>
 					<div class="form-container sign-in-container">
-						<form action="/login">
+						<form action="/login" method="POST">
 						@csrf
 							<h1>Sign in</h1>
 							<div class="social-container">
