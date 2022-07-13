@@ -228,12 +228,24 @@ input {
 .signup-btn{
 	margin-top: 3vh;
 }
-
+a:link{
+	color: #333;
+	text-decoration: none;
+}
+a:visited{
+	color: #333;
+	text-decoration: none;
+}
 #boton-goback{
+	margin-left: 2vw;
 	background-color: #e0e0e0;
 	color: #222222;
 }
 
 button:hover{
 	transform: scale(0.95); 
+}
+
+.btn-goback{
+	margin-top: 2vh;
 }

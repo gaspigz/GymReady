@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\DB;
 class RegisterController extends Controller
 {
     public function show(){ //Muestra la vista
+        if(Auth::check()){
+            return redirect()->route('/index');
+        }
         return view('register');
     } 
 
@@ -32,10 +35,10 @@ class RegisterController extends Controller
                 $user->save();
                 return redirect('/login')->with('succes','Account created');
             }else{
-                return redirect('/register')->with('error','User or email already exists');
+                return redirect('/register')->withErrors('User or email already exists. ');
             }
         }else{
-            return redirect('/register')->with('error','Passwords do not match');
+            return redirect('/register')->withErrors('The passwords do not match. ');
         }   
         /*
         $user = User::create($request->validated());

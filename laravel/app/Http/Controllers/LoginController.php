@@ -11,6 +11,9 @@ use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 class LoginController extends Controller
 {
     public function show(){
+        if(Auth::check()){
+            return redirect()->route('/index');
+        }
         return view('login');
     }
 
@@ -22,7 +25,7 @@ class LoginController extends Controller
             print_r($credentials);
             print_r(Auth::validate($credentials));
             
-            return redirect('/login');      
+            return redirect()->to('/login')->withErrors('User or password not valid. ');      
         }else{
             $user = Auth::getProvider()->retrieveByCredentials($credentials);
 

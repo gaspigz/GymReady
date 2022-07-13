@@ -69,7 +69,10 @@
 								<input class="col-sm-6" type="password" placeholder="Password" name="password"/><input class="col-sm-6" type="password" placeholder="Confirm password" name="password_confirmation"/>
 							</div>
 							
-							<button class="signup-btn">Sign Up</button>
+							<div>
+							<button class="btn-goback">Sign up</button><button class="btn-goback" id="boton-goback"><a href="/index">Go back</a></button>
+							</div>
+							@include('partials.messages') 
 						</form>
 					</div>
 					<div class="form-container sign-in-container">
@@ -85,8 +88,11 @@
 							<input type="text" name="user" placeholder="User or email" />
 							<input type="password" name="password" placeholder="Password" />
 							<a href="#">Forgot your password?</a>
-							<button>Sign In</button>
-							<button id="boton-goback"><a href="/index">Go back</a></button>
+							<div>
+							<button>Sign In</button><button id="boton-goback"><a href="/index">Go back</a></button>
+							</div>
+							@include('partials.messages') 
+							
 						</form>
 					</div>
 					<div class="overlay-container">
