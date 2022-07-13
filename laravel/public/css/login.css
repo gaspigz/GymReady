@@ -98,6 +98,7 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	height: 55vh;
 }
 
 .form-container {

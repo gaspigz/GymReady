@@ -30,10 +30,13 @@ class RegisterController extends Controller
         $user->password = bcrypt($request->password);
         //$user->save();
         //return redirect('/login')->with('succes','Account created');
+        if($this->blankCheck($request)){ //Si es true hay algo en blanco
+            return redirect('/register')->withErrors('All fields are required.');
+        }
         if($request->password == $request->password_confirmation){
             if($this->ckuniques($request->user, $request->email)){
                 $user->save();
-                return redirect('/login')->with('succes','Account created');
+                return redirect('/login')->withSuccess('Account created');
             }else{
                 return redirect('/register')->withErrors('User or email already exists. ');
             }
@@ -55,6 +58,14 @@ class RegisterController extends Controller
             return false;
         }else{
             return true;
+        }
+    }
+
+    protected function blankCheck($request){
+        if($request->user == '' || $request->email == '' || $request->name == '' || $request->surname == '' || $request->birth_date == '' || $request->password == '' || $request->password_confirmation == ''){
+            return true;
+        }else{
+            return false;
         }
     }
 

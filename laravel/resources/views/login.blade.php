@@ -70,7 +70,7 @@
 							</div>
 							
 							<div>
-							<button class="btn-goback">Sign up</button><button class="btn-goback" id="boton-goback"><a href="/index">Go back</a></button>
+							<button class="btn-goback">Sign up</button><a href="/index" style="margin-left: 1rem">Go back</a>
 							</div>
 							@include('partials.messages') 
 						</form>
@@ -89,7 +89,7 @@
 							<input type="password" name="password" placeholder="Password" />
 							<a href="#">Forgot your password?</a>
 							<div>
-							<button>Sign In</button><button id="boton-goback"><a href="/index">Go back</a></button>
+							<button>Sign In</button><a href="/index" style="margin-left: 1rem">Go back</a>
 							</div>
 							@include('partials.messages') 
 							
@@ -118,6 +118,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/js/login.js"></script>
 	<script type="text/javascript" src="/js/scripts.js"></script> </script>
+	<script type="text/javascript" src="/js/popup.js"></script> </script>
 </body>
 </html>
 	
