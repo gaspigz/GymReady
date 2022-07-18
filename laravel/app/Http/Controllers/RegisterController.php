@@ -35,6 +35,7 @@ class RegisterController extends Controller
         }
         if($request->password == $request->password_confirmation){
             if($this->ckuniques($request->user, $request->email)){
+                
                 $user->save();
                 return redirect('/login')->withSuccess('Account created');
             }else{

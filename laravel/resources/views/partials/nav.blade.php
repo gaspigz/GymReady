@@ -31,6 +31,7 @@
 					<li class="nav-item login-nav-btn">
 					<a class="nav-link text-light text-light" href="/logout">Log Out</a>
 					</li>
+					
 					@endauth
 
 				</ul>

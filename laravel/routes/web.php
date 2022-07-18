@@ -36,3 +36,4 @@ Route::get('/login', [LoginController::class, 'show']);
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/logout', [LogoutController::class, 'logout']);
+
