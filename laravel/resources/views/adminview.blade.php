@@ -55,7 +55,7 @@
 		
 		@if (isset(auth()->user()->user))
 			@if (auth()->user()->user=='Admin')
-				@include('partials.adminlist')
+				@include('adminview')
 			@endif
 		@endif
 

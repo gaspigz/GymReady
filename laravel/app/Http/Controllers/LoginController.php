@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
     public function show(){
         if(Auth::check()){
-            return redirect()->route('/index');
+            return redirect()->to('/index');
         }
         return view('login');
     }
@@ -31,12 +31,19 @@ class LoginController extends Controller
 
             Auth::login($user);
             echo $user;
-            return $this->authenticated($request, $user);
+            if(strtoupper($user)=='ADMIN'){
+                return $this->authenticated($request, $user, 1);
+            }
+            return $this->authenticated($request, $user, 0);
         } 
     }
 
-    protected function authenticated(Request $request, $user) 
+    protected function authenticated(Request $request, $user, $bandera) 
     {
-        return redirect('/index');
+        if($bandera==0){
+            return redirect('/index');;
+        }else{
+            return redirect('/adminview');;
+        }
     }
 }

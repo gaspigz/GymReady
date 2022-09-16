@@ -37,3 +37,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/logout', [LogoutController::class, 'logout']);
 
+Route::get('/adminview', function () {
+    return view('adminview');
+});
+
