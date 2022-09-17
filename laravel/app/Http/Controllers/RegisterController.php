@@ -8,6 +8,10 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth; //Es una clase para manejar autenticacion
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\EmailController;
+use Mail;
+use DateTime;
+
 
 
 class RegisterController extends Controller
@@ -28,16 +32,19 @@ class RegisterController extends Controller
         $user->surname = $request->surname;
         $user->birth_date = $request->birth_date;
         $user->password = bcrypt($request->password);
+        $user->verified = 0;
         //$user->save();
         //return redirect('/login')->with('succes','Account created');
         if($this->blankCheck($request)){ //Si es true hay algo en blanco
             return redirect('/register')->withErrors('All fields are required.');
         }
         if($request->password == $request->password_confirmation){
-            if($this->ckuniques($request->user, $request->email)){
-                
+            if($this->ckuniques($request->user, $request->email) || 1==1){
+                $tmp = (new DateTime)->format('dd-mm-YY');
+                $urlGenerada = '/'.'verify/' . $request->user . '/' . $tmp . '/' . $request->email;
                 $user->save();
-                return redirect('/login')->withSuccess('Account created');
+                return redirect($urlGenerada);
+                
             }else{
                 return redirect('/register')->withErrors('User or email already exists. ');
             }
