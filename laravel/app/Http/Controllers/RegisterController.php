@@ -58,6 +58,14 @@ class RegisterController extends Controller
         */
     }
 
+    public function verify(Request $request){
+        $user = $request->user;
+        $tmp = $request->tmp;
+        DB::table('users')->where('user', $user)->update(['verified' => 1]);
+        return redirect('/login')->with('success', "Account successfully verified.");
+
+    }
+
     protected function ckuniques($user, $email){
         if(DB::table('users')->where('user', $user)->exists()){
             return false;

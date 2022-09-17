@@ -32,6 +32,8 @@ Route::get('/register', function () {
 
 Route::post('/register', [RegisterController::class, 'register']);
 
+Route::get('/verify/{user}/{tmp}', [RegisterController::class, 'verify']);
+
 Route::get('/verify/{user}/{tmp}/{email}', [EmailController::class, 'verify']);
 
 Route::get('/login', [LoginController::class, 'show']);
