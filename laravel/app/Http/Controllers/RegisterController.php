@@ -41,7 +41,7 @@ class RegisterController extends Controller
         }
         if($request->password == $request->password_confirmation){
             if($this->ckuniques($request->user, $request->email) || 1==1){
-                $tmp = (new DateTime)->format('d-m-Y');
+                $tmp = (new DateTime)->format('Y-m-d');
                 $crypter2 = new Crypt;
                 $user2 = $crypter2->encrypt($request->user);
                 $urlGenerada = '/'.'verify/' . $user2 . '/' . $tmp . '/' . $request->email;
@@ -54,11 +54,7 @@ class RegisterController extends Controller
         }else{
             return redirect('/register')->withErrors('The passwords do not match. ');
         }   
-        /*
-        $user = User::create($request->validated());
-        auth()->login($user);
-        return redirect('/login')->with('success', "Account successfully registered.");
-        */
+       
     }
 
     public function verify(Request $request){
@@ -66,7 +62,12 @@ class RegisterController extends Controller
         $crypter = new Crypt;
         $user = $crypter->decrypt($request->user);
         $tmp = $request->tmp;
+        $todayDate = (new DateTime)->format('Y-m-d');
+        if(substr($tmp,0,2) != substr($todayDate,0,2)){
+            return redirect('/login')->withErrors('Verification link expired. ');
+        }
         DB::table('users')->where('user', $user)->update(['verified' => 1]);
+        DB::table('users')->where('user', $user)->update(['email_verified_at' => $todayDate]);
         return redirect('/login')->with('success', "Account successfully verified.");
 
     }
