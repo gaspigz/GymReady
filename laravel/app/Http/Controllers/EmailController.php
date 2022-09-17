@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
 use App\Mail\DemoMail;
+use App\Crypt;
   
 class EmailController extends Controller
 {
@@ -15,6 +16,8 @@ class EmailController extends Controller
      */
     public function verify(Request $request)
     {
+        $crypter = new Crypt;
+
 
         $mailData = [
             'title' => 'Verificatiom email from GYM READY',

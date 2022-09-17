@@ -34,7 +34,7 @@ class LoginController extends Controller
             $user = Auth::getProvider()->retrieveByCredentials($credentials);
 
             Auth::login($user);
-            echo $user;
+            
             if(strtoupper($user)=='ADMIN'){
                 return $this->authenticated($request, $user, 1);
             }

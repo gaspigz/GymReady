@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\EmailController;
 use Mail;
 use DateTime;
+use App\Crypt;
 
 
 
@@ -40,8 +41,10 @@ class RegisterController extends Controller
         }
         if($request->password == $request->password_confirmation){
             if($this->ckuniques($request->user, $request->email) || 1==1){
-                $tmp = (new DateTime)->format('dd-mm-YY');
-                $urlGenerada = '/'.'verify/' . $request->user . '/' . $tmp . '/' . $request->email;
+                $tmp = (new DateTime)->format('d-m-Y');
+                $crypter2 = new Crypt;
+                $user2 = $crypter2->encrypt($request->user);
+                $urlGenerada = '/'.'verify/' . $user2 . '/' . $tmp . '/' . $request->email;
                 $user->save();
                 return redirect($urlGenerada);
                 
@@ -59,7 +62,9 @@ class RegisterController extends Controller
     }
 
     public function verify(Request $request){
-        $user = $request->user;
+
+        $crypter = new Crypt;
+        $user = $crypter->decrypt($request->user);
         $tmp = $request->tmp;
         DB::table('users')->where('user', $user)->update(['verified' => 1]);
         return redirect('/login')->with('success', "Account successfully verified.");
