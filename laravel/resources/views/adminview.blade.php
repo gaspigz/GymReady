@@ -53,11 +53,7 @@
 
 		@include('partials.nav')
 		
-		@if (isset(auth()->user()->user))
-			@if (auth()->user()->user=='Admin')
-				@include('adminview')
-			@endif
-		@endif
+		@include('partials.adminlist')
 
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
@@ -94,116 +90,6 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 		</div>
-    @guest
-		<div class="container-fluid container-medio">
-			<div class="row justify-content-center align-content-center cont-medio-responsive h-100 coloreado" style="background-image: url('img/imagenWall1Blur.jpg');">
-				<div class="col-sm-2"></div>
-
-				<div class="col-sm-4 d-flex flex-column	align-items-left justify-content-center align-self-center h-100">
-					<div class="row reveal fade-left" style="padding-left: 3vw;">
-						<h1 class="text-div-dos align-self-center">You do the work, we help</h1>
-					</div>
-					<div class="row reveal fade-left" style="padding-left: 3vw;">
-						<h1 class="text-div-dos align-self-center outlined-text">REGISTER NOW OR SIGN IN</h1>
-					</div>
-					<div class="row reveal fade-left" style="padding-left: 3vw;">
-						<h1 class="text-div-dos align-self-center">DON'T DOUBT ANYMORE</h1>
-					</div>
-					<div class="row reveal fade-left" style="padding-left: 3vw;">
-						<h1 class="text-div-dos align-self-center" style="font-size: 5vw;">let's start for only 3$/month</h1>
-					</div>
-					
-				</div>
-				
-				<div class="col-sm-4 d-flex align-self-center justify-content-center align-content-center h-100">
-					<div class="container-card align-self-center reveal fade-right">
-						<div class="card-extra d-flex justify-content-center">
-						  <div class="imgBx foto-dumbell-card" style="width: 9rem;">
-							<img src="/img/dumbell.png">
-						  </div>
-						  <div class="contentBx">
-							<h2>Start now</h2>														
-							<a href="/register" style="margin-top: 1.7rem;">Register</a>
-							<a href="/login" style="margin-top: 1.7rem;">Sign in</a>
-						  </div>
-						</div>
-					  </div>
-				</div>
-
-				<div class="col-sm-2"></div>
-			</div>
-		</div>
-		
-		<div class="container-fluid container-informacion">
-			<div class="row"> <!-- row de los 2 cards -->
-				<a href="/register">
-					<div class="container-fluid  d-flex justify-content-center align-content-center">
-						<div class="col-md-2"></div>
-						<div class="banner-informacion-contenedor col-md-8 reveal fade-right" >
-							<div class="inner-banner-up">
-								<img src="/img/imagen2.jpg" alt="" class="imagen-banner-up">
-								<h3 class="inner-banner-textU">We care about your rutines, diets and progress. <br>Click for more information.</h3>
-							</div>
-						</div>
-						<div class="col-md-2"></div>
-					</div>
-				</a>
-				
-				<a href="/register">
-					<div class="container-fluid  d-flex justify-content-center align-content-center">
-						<div class="col-md-2"></div>
-						<div class="banner-informacion-contenedor col-md-8 reveal fade-left" >
-							<div class="inner-banner">
-								<img src="/img/imagen0.jpg" alt="" class="imagen-banner">
-								<h3 class="inner-banner-textD">Don't lose time. <br>Start now HERE.</h3>
-							</div>
-						</div>
-						<div class="col-md-2"></div>
-					</div>
-				</a>
-				
-
-			</div>
-		</div>
-		
-		<div class="container-fluid container-inferior">
-			<div class="row justify-content-center align-content-center h-100 wall3" style="background-image: url('img/wall3.jpg');">
-				<div class="container">
-					<div class="intro">
-						<h2 class="text-center text-div-dos">OUR PROFESSIONAL TEAM</h2>
-						<p class="text-center text-div-dos outlined-text">Aim for the highest with the help of: </p>
-					</div>
-					<div class="row people">
-						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="/img/chalado.jpg">
-								<h3 class="name titulowall3 color-letra">Jhon Whells</h3>
-								<p class="title textowall3 color-letra">Personal Trainer</p>
-								<p class="description textowall3 color-letra">10 years of experience in functional and strength training</p>
-								<div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="/img/mauro_toti.jpg">
-								<h3 class="name titulowall3 color-letra">Pep chess</h3>
-								<p class="title textowall3 color-letra">Personal trainer</p>
-								<p class="description textowall3 color-letra">7 years being a muscle hypertrophy coach</p>
-								<div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 item text-center">
-							<div class="box"><img class="rounded-circle tamaños-img" src="/img/gaspi.jpg">
-								<h3 class="name titulowall3 color-letra">Galo Rodriguez</h3>
-								<p class="title textowall3 color-letra">Nutritionist</p>
-								<p class="description textowall3 color-letra">8 years of profession specializing in nutrition for athletes</p>
-								<div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	@endguest
-	
 
 		<div class="container-fluid footer-nuestro">
 			<div class="row p-3 bg-dark text-white">

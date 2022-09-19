@@ -52,12 +52,6 @@
 		</div>
 
 		@include('partials.nav')
-		
-		@if (isset(auth()->user()->user))
-			@if (auth()->user()->user=='Admin')
-				@include('partials.adminlist')
-			@endif
-		@endif
 
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">

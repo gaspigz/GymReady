@@ -5,6 +5,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -42,7 +43,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/logout', [LogoutController::class, 'logout']);
 
-Route::get('/adminview', function () {
-    return view('adminview');
-});
+Route::get('/adminview', [AdminController::class, 'index']);
+
+Route::get('/accessviolation/{codigo}/{user}',[EmailController::class, 'accessViolation']);
 

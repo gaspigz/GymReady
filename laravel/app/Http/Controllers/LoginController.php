@@ -22,20 +22,23 @@ class LoginController extends Controller
         
         $verifiedToken = DB::table('users')->where('user', $request->user)->value('verified');
         $credentials = $request->getCredentials(); //esto viene de la login request, puede ser el user y la contra o el mail y la contra
-        if($verifiedToken == 0){
-            return redirect()->to('/login')->withErrors('User not verified. Please check your email.');
-        }
+        
         if(!Auth::validate($credentials)){
             print_r($credentials);
             print_r(Auth::validate($credentials));
             
             return redirect()->to('/login')->withErrors('User or password not valid. ');      
         }else{
+            if($verifiedToken == 0){
+                return redirect()->to('/login')->withErrors('User not verified. Please check your email.');
+            }
             $user = Auth::getProvider()->retrieveByCredentials($credentials);
 
             Auth::login($user);
-            
-            if(strtoupper($user)=='ADMIN'){
+
+           // $username = $credentials['user'];
+            $username = Auth::user()->user;
+            if(strtoupper($username)=='ADMIN'){
                 return $this->authenticated($request, $user, 1);
             }
             return $this->authenticated($request, $user, 0);
