@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -14,6 +15,7 @@ class AdminController extends Controller
 
             return redirect()->to('/accessviolation'.'/1'.'/'.auth()->user()->user);
         }
-        return view('adminview');
+
+        return view('adminview')->with('users', DB::table('users')->orderBy('id')->get());
     }
 }
