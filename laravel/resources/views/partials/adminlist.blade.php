@@ -33,10 +33,15 @@
                           {{ $user->type }}
                         </td>
                         <td>
-                          <form action="/deleteuser/{{ $user->id }}" method="POST">
+                          <form action="/deleteuser/{{ $user->id }}" method="DELETE">
                             @csrf
                             <input type="submit" value="Delete">
                           </form>
+                        </td>
+                        <td class="td update-button" id="{{ $user->id }}">
+                          
+                          <i class="fa-solid fa-pen-to-square" ></i>
+                          
                         </td>
                     </tr>
                     @endforeach
@@ -46,3 +51,10 @@
     <div class="col-sm-2"></div>
   </div>
 </div>
+<script>
+  $(".update-button").click(function(e){
+    let id = $(this).attr('id');
+    console.log(id);
+  })
+
+</script>

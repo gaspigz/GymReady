@@ -47,4 +47,5 @@ function reveal() {
 
   $(window).on("load",function(){
     $(".loader-wrapper").fadeOut("slow");
-});
+  });
+
